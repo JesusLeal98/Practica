@@ -1,0 +1,35 @@
+<% include header %>
+<style>
+    h2 {
+        position: absolute;
+        top: 25%;
+        color: red;
+    }
+    div.form-group1 {
+        margin-top: 21%;
+    }
+    div.form-group2 {
+        margin-top: 1%;
+    }
+    label {
+        color: white;
+    }
+</style>
+<h2>Ingrese la persona a matar</h2>
+<form method="post" role="form">
+    <div class="form-group1">
+        <label for="title">Nombre</label>
+        <input type="text" class="form-control"
+        id="title" name="title" placeholder="Escribe el nombre de la victima!" required/>
+    </div>
+    <div class="form-group2">
+        <label for="body">Mensaje</label>
+        <textarea class="form-control"
+        id="body" name="body" placeholder="Escribe con que zombie quieres que muera" rows="3" required>
+        </textarea>
+    </div>
+    <div class="form-group2">
+        <input type="submit" class="btn-primary" value="Aceptar"/>
+    </div>
+</form>
+<% include footer %>

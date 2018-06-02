@@ -1,0 +1,35 @@
+<% include header %>
+<style>
+    h2 {
+        color: red;
+    }
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<% if (entries.length) { %>
+    <% entries.forEach((entry) => { %>
+    <h2>Victima</h2>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="text-muted pull-right">
+                    <%= entry.created %>
+                </div>
+                <%= entry.title %>
+            </div>
+            <div class="panel-body">
+                <%= entry.body %>
+            </div>
+        </div>
+    <% }) %>
+    <% } else { %>
+        
+    <% } %>
+<% include footer %>
